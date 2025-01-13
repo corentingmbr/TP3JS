@@ -1,7 +1,6 @@
-alert('Ceci viens de mon fichier Js');
+let nomJour = "Lundi",
+    numJour = 13,
+    nomMois = "Janvier",
+    isHiver = true;
 
-let reponse = prompt('Quelle est ta série préférée ?');
-console.log(reponse);
-
-//6)
-// résultat je peux voir la réponse de l'utilisateur enregistrée en session temporaire dans la console via inspecter
+console.log(`Nous sommes le ${nomJour} ${numJour} ${nomMois} 2025 et c'est la saison ${isHiver ? 'hivernale' : 'éstivale'}`)
