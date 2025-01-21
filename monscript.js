@@ -4,7 +4,7 @@ console.log(myarray.slice(0, 8));
 for (let i = 0; i < 8; i++) {
     console.log(myarray[i]);
 }
-console.log(" affichage avec length")
+console.log(" affichage avec length : ")
 for (length in myarray) {
     console.log(myarray[length]);
 }
