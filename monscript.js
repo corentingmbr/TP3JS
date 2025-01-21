@@ -1,41 +1,20 @@
-let age;
-
-age = parseInt(prompt('What is your age?'), 10);
-
-//si on veut pas mettre parseInt avant notre prompt, on peut mettre des string dans nos conditions (cases et if)
-//du style : age === "value" ou case "value"
-
-if (age === 18) {
-    console.log(`The user has ${age} years old, he just got his majority !`);
-} else if (age === 25) {
-    console.log(`The user has ${age} years old, he has a quarter of a century !`);
-} else if (age === 50) {
-    console.log(`The user has ${age} years old, he is half a century !`);
-} else if (age === 62) {
-    console.log(`The user has ${age} years old, he just got retired !`);
-} else if (age === 100) {
-    console.log(`The user has ${age} years old, he just became a centenarian !`);
+let i = 1;
+console.log("Début de la boucle 1 :");
+while (i < 100) {
+    i += i
+    console.log(i)
 }
 
-// méthode switch.
+console.log("Début de la boucle 2 :");
 
-switch (age) {
-    case 18:
-        console.log(`The user has ${age} years old, he just got his majority !`);
-        break;
-    case 25:
-        console.log(`The user has ${age} years old, he has a quarter of a century !`);
-        break;
-    case 50:
-        console.log(`The user has ${age} years old, he is half a century !`);
-        break;
-    case 62:
-        console.log(`The user has ${age} years old, he just got retired !`);
-        break;
-    case 100:
-        console.log(`The user has ${age} years old, he just became a centenarian !`);
-        break;
-    default:
-        console.log(`The user has ${age} years old`);
-        break;
+let number;
+do {
+    number = parseInt(prompt("Entrez un nombre entre 1 et 100 :"), 10);
+} while (isNaN(number) || number < 1 || number > 100);
+
+let sum = 0;
+for (let i = 1; i <= number; i++) {
+    sum += i;
 }
+
+console.log(`La somme des ${number} premiers nombres est : ${sum}`);
