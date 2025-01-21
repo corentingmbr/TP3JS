@@ -1,20 +1,10 @@
-let i = 1;
-console.log("Début de la boucle 1 :");
-while (i < 100) {
-    i += i
-    console.log(i)
+let myarray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(myarray.slice(0, 8));
+
+for (let i = 0; i < 8; i++) {
+    console.log(myarray[i]);
 }
-
-console.log("Début de la boucle 2 :");
-
-let number;
-do {
-    number = parseInt(prompt("Entrez un nombre entre 1 et 100 :"), 10);
-} while (isNaN(number) || number < 1 || number > 100);
-
-let sum = 0;
-for (let i = 1; i <= number; i++) {
-    sum += i;
+console.log(" affichage avec length")
+for (length in myarray) {
+    console.log(myarray[length]);
 }
-
-console.log(`La somme des ${number} premiers nombres est : ${sum}`);
