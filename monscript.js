@@ -1,6 +1,9 @@
 let age;
 
-age = prompt('What is your age?');
+age = parseInt(prompt('What is your age?'), 10);
+
+//si on veut pas mettre parseInt avant notre prompt, on peut mettre des string dans nos conditions (cases et if)
+//du style : age === "value" ou case "value"
 
 if (age === 18) {
     console.log(`The user has ${age} years old, he just got his majority !`);
@@ -36,8 +39,3 @@ switch (age) {
         console.log(`The user has ${age} years old`);
         break;
 }
-
-
-
-
-
