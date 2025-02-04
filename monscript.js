@@ -1,10 +1,13 @@
-let myarray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log(myarray.slice(0, 8));
+/* Toutes les variables */
+let li = document.querySelector("#listeCourses li");
 
-for (let i = 0; i < 8; i++) {
-    console.log(myarray[i]);
-}
-console.log(" affichage avec length :")
-for (length in myarray) {
-    console.log(myarray[length]);
-}
+
+/* Tous les évènements */
+li.addEventListener('click', () => {
+    li.style.backgroundColor = "lightblue";
+    li.style.textDecoration = "line-through";
+});
+
+
+/* Les fonctions */
+// A voir plus tard
